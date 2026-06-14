@@ -1,10 +1,128 @@
 <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slade Knowledge Base</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p>hello</p>
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-left">
+        <span class="logo">UCL LOGO</span>
+        <span class="divider">|</span>
+        <span class="search-label">SEARCH</span>
+        <input type="text" class="search-input" placeholder="">
+      </div>
+      <a href="profile.html" class="header-me">ME</a>
+    </header>
+
+    <!-- LAYOUT WRAPPER -->
+    <div class="layout">
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <p class="nav-label">NAVIGATION</p>
+          <ul>
+            <li><a href="index.html" class="nav-link">HOME <span>→</span></a></li>
+            <li><a href="saved.html" class="nav-link">SAVED <span>→</span></a></li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-disciplines">
+          <p class="nav-label">DISCIPLINES</p>
+          <ul>
+            <li><a href="#" class="discipline-link">painting</a></li>
+            <li><a href="#" class="discipline-link">sculpture</a></li>
+            <li><a href="#" class="discipline-link">print</a></li>
+            <li><a href="#" class="discipline-link">media</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-bottom">
+          <a href="https://slademedia.siso.co/" target="_blank" class="nav-link">SISO</a>
+          <a href="archive.html" class="nav-link">ARCHIVE</a>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="main-content">
+        <h1 class="page-title">POSTS</h1>
+
+        <div class="post-grid">
+
+          <!-- CARD WITH IMAGE -->
+          <article class="post-card">
+            <a href="post.html">
+              <div class="card-inner card-with-image">
+                <div class="card-thumbnail"></div>
+                <div class="card-meta">
+                  <h2 class="card-title">TITLE</h2>
+                  <p class="card-author">NADEZHDA K • 01/06/26</p>
+                  <p class="card-discipline">MEDIA</p>
+                  <p class="card-tags">#sound #code #moving-image</p>
+                  <p class="card-location">LOCATION: MAIN</p>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- CARD WITH IMAGE -->
+          <article class="post-card">
+            <a href="post.html">
+              <div class="card-inner card-with-image">
+                <div class="card-thumbnail"></div>
+                <div class="card-meta">
+                  <h2 class="card-title">TITLE</h2>
+                  <p class="card-author">KELLY W • 12/05/26</p>
+                  <p class="card-discipline">PRINT</p>
+                  <p class="card-tags">#etching</p>
+                  <p class="card-location">LOCATION: WOBURN</p>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- TEXT ONLY CARD -->
+          <article class="post-card">
+            <a href="post.html">
+              <div class="card-inner card-text-only">
+                <p class="card-body-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rutrum mauris, vel eleifend nulla. Cras sit amet sagittis urna... <span class="read-more">read more</span></p>
+                <div class="card-meta">
+                  <h2 class="card-title">TITLE</h2>
+                  <p class="card-author">VAIDEHI J • 22/12/25</p>
+                  <p class="card-discipline">MEDIA</p>
+                  <p class="card-tags">#photography #code</p>
+                  <p class="card-location">LOCATION: EAST</p>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- TEXT ONLY CARD -->
+          <article class="post-card">
+            <a href="post.html">
+              <div class="card-inner card-text-only">
+                <p class="card-body-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet rutrum mauris, vel eleifend nulla. Cras sit amet sagittis urna... <span class="read-more">read more</span></p>
+                <div class="card-meta">
+                  <h2 class="card-title">TITLE</h2>
+                  <p class="card-author">PATRWICK W • 22/12/25</p>
+                  <p class="card-discipline">SCULPTURE</p>
+                  <p class="card-tags">#ceramic #woodwork</p>
+                  <p class="card-location">LOCATION: MAIN</p>
+                </div>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </main>
+    </div>
+
   </body>
 </html>
