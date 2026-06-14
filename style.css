@@ -27,7 +27,7 @@ body {
   height: 60px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  margin: 12px;
+  margin: 12px 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +43,7 @@ body {
 }
 
 .search-input {
-  width: 400px;
+  width: 600px;
   height: 28px;
   border: 1px solid var(--muted);
   border-radius: 20px;
@@ -55,15 +55,14 @@ body {
 .header-me {
   text-decoration: none;
   color: var(--text);
-  font-weight: bold;
 }
 
 /* LAYOUT */
 .layout {
   display: flex;
   margin-top: 84px;
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 90px;
+  margin-right: 90px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   min-height: calc(100vh - 96px);
@@ -74,7 +73,7 @@ body {
   width: 240px;
   min-width: 240px;
   border-right: 1px solid var(--border);
-  padding: 24px;
+  padding: 24px 0;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -85,21 +84,26 @@ body {
   color: var(--muted);
   margin-bottom: 12px;
   letter-spacing: 0.05em;
+  padding: 0 24px;
 }
 
 .sidebar-nav ul,
 .sidebar-disciplines ul {
   list-style: none;
 }
+.sidebar-nav ul li:last-child .nav-link {
+  border-bottom: 1px solid var(--border);
+}
+
 
 .nav-link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-decoration: none;
   color: var(--text);
-  font-size: 20px;
-  font-weight: bold;
-  padding: 12px 0;
+  font-size: 24px;
+  padding: 12px 24px;
   border-top: 1px solid var(--border);
 }
 
@@ -108,7 +112,7 @@ body {
   text-decoration: none;
   color: var(--text);
   font-size: 16px;
-  padding: 6px 0;
+  padding: 6px 24px;
 }
 
 .sidebar-bottom {
