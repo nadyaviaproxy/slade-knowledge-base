@@ -25,12 +25,12 @@ body {
   left: 0;
   right: 0;
   height: 60px;
-  border: 1px solid var(--border);
+  border: 1.45px solid var(--border);
   border-radius: var(--radius);
-  margin: 12px 90px;
-  display: flex;
+  margin: 30px 190px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   padding: 0 24px;
   background: var(--bg);
   z-index: 100;
@@ -39,40 +39,45 @@ body {
 .header-left {
   display: flex;
   align-items: center;
-  gap: 16px;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-me {
+  justify-self: end;
 }
 
 .search-input {
   width: 600px;
   height: 28px;
-  border: 1px solid var(--muted);
+  border: 1.45px solid var(--muted);
   border-radius: 20px;
   padding: 0 12px;
   background: #f0f0f0;
   outline: none;
 }
 
-.header-me {
-  text-decoration: none;
-  color: var(--text);
-}
 
 /* LAYOUT */
 .layout {
   display: flex;
-  margin-top: 84px;
-  margin-left: 90px;
-  margin-right: 90px;
-  border: 1px solid var(--border);
+  margin-top: 114px;
+  margin-left: 190px;
+  margin-right: 190px;
+  border: 1.45px solid var(--border);
   border-radius: var(--radius);
-  min-height: calc(100vh - 96px);
+  min-height: calc(100vh - 146px);
 }
 
 /* SIDEBAR */
 .sidebar {
   width: 240px;
   min-width: 240px;
-  border-right: 1px solid var(--border);
+  border-right: 1.45px solid var(--border);
   padding: 24px 0;
   display: flex;
   flex-direction: column;
@@ -80,11 +85,9 @@ body {
 }
 
 .nav-label {
-  font-size: 12px;
-  color: var(--muted);
-  margin-bottom: 12px;
-  letter-spacing: 0.05em;
-  padding: 0 24px;
+  padding: 12px 24px;
+  font-size: 24px;
+  color: var(--text);
 }
 
 .sidebar-nav ul,
@@ -92,7 +95,7 @@ body {
   list-style: none;
 }
 .sidebar-nav ul li:last-child .nav-link {
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1.45px solid var(--border);
 }
 
 
@@ -104,7 +107,7 @@ body {
   color: var(--text);
   font-size: 24px;
   padding: 12px 24px;
-  border-top: 1px solid var(--border);
+  border-top: 1.45px solid var(--border);
 }
 
 .discipline-link {
@@ -124,12 +127,13 @@ body {
 
 .sidebar-bottom .nav-link {
   font-size: 16px;
+  border: none
 }
 
 /* MAIN CONTENT */
 .main-content {
   flex: 1;
-  padding: 24px;
+  padding: 34px;
   overflow-y: auto;
 }
 
@@ -152,7 +156,7 @@ body {
 }
 
 .card-inner {
-  border: 1px solid var(--border);
+  border: 1.45px solid var(--border);
   border-radius: var(--radius);
   padding: 16px;
   display: flex;
